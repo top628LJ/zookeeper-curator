@@ -1,3 +1,5 @@
 rootProject.name = 'zookeeper'
 include 'config-center'
+include 'leader-latch'
+include 'distributed-lock'
 

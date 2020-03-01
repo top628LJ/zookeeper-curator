@@ -22,6 +22,7 @@ public class ConfigCenter implements Publisher, Subscriber {
                 .connectString("47.115.126.161:2181,47.115.125.138:2181,47.115.112.137:2181")
                 .retryPolicy(new ExponentialBackoffRetry(1000, 3))
                 .sessionTimeoutMs(5000)
+                .namespace(namespace)
                 .build();
         client.start();
     }
