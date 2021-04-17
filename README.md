@@ -1,6 +1,6 @@
 # zookeeper-curator
 
-Zookeeper-curator 组件的三个应用场景：
+Zookeeper-curator 组件的三个应用场景demo：
 * 发布/订阅
 * 分布式锁
 * leader选举
