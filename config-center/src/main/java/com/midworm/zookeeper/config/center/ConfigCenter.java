@@ -19,7 +19,7 @@ public class ConfigCenter implements Publisher, Subscriber {
     public ConfigCenter(String namespace) throws Exception {
         this.namespace = namespace;
         client = CuratorFrameworkFactory.builder()
-                .connectString("47.115.126.161:2181,47.115.125.138:2181,47.115.112.137:2181")
+                .connectString("127.0.0.1:2181")
                 .retryPolicy(new ExponentialBackoffRetry(1000, 3))
                 .sessionTimeoutMs(5000)
                 .namespace(namespace)
